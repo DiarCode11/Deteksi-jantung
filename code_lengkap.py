@@ -14,12 +14,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import joblib
 
-# Load dataset
-from google.colab import files
-uploaded = files.upload()
-
 import io
-data = pd.read_csv(io.BytesIO(uploaded['heart.csv']))
+data = pd.read_csv("heart.csv")
 
 # Display the first few rows of the dataframe
 print(data.head())
